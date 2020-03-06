@@ -1,0 +1,47 @@
+{
+  "name": "heroku-portfolio",
+  "version": "1.0.0",
+  "description": "Developer Portfolio for Deployment on Heroku",
+  "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build",
+    "lint": "eslint . --quiet",
+    "test": "npm run lint",
+    "fix": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgeary/heroku-portfolio.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Kevin Geary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kgeary/heroku-portfolio/issues"
+  },
+  "homepage": "https://github.com/kgeary/heroku-portfolio#readme",
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-flowtype": "^4.6.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.4.0",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "morgan": "^1.9.1"
+  }
+}
