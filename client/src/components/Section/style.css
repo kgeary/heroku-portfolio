@@ -1,0 +1,30 @@
+.Section {
+  background-color: whitesmoke;
+  opacity: 0.92;
+  padding-top: 2rem;
+  border: 1px solid #DDD;
+  padding: 1rem;
+  text-align: left;
+}
+
+.Section::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.Section .Title {
+  margin-top: 0;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("./mountains.jpg");
+  /* Full height */
+  height: 70%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

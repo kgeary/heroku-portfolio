@@ -1,0 +1,8 @@
+.profileImage {
+  float: left;
+  width: 150px;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 15px;
+  opacity: 1.0;
+}

@@ -1,3 +1,53 @@
-.navbar-brand {
+.appBar {
+  background-color: red;
+  width: 100%;
+}
+
+.toolbar {
+  background-color: blue;
+}
+
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav {
+  margin-left: auto;
+}
+
+.navBrand {
   font-family: 'Merriweather', serif;
+  font-size: 22px;
+  color: #99bbee;
+}
+
+.navLink {
+  color: #99bbee;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.navLink.active {
+  opacity: 1;
+}
+
+.navLink:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .navContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }

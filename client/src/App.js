@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Router>
         <Nav />
-        <div className="Content">
+        <div className="Content parallax">
           <Switch>
             <Route exact path="/"><About /></Route>
             <Route exact path="/contact"><Contact /></Route>

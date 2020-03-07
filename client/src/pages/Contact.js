@@ -1,7 +1,14 @@
 import React from "react";
+import { Container } from "@material-ui/core"
+import Section from "../components/Section";
+import ContactContent from "../content/ContactContent";
 function Contact(props) {
   return (
-    <h1>Contact Coming Soon</h1>
+    <Container maxWidth="md">
+      <Section title="Contact Me">
+        <ContactContent />
+      </Section>
+    </Container>
   );
 }
 export default Contact;

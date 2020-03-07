@@ -1,8 +1,33 @@
+/* Sticky Footer */
+
+html, body, #root, .App {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  font-family: 'Open Sans', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Sticky Footer */
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sticky Footer */
+
+.Content {
+  flex: 1 0 auto;
+}
+
+/* Sticky Footer */
+
+.Footer {
+  flex-shrink: 0;
 }
 
 code {
