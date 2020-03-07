@@ -1,14 +1,14 @@
 import React from "react";
 import { Container } from "@material-ui/core";
-import Section from "../components/Section";
+import Main from "../components/Main";
 import AboutContent from "../content/AboutContent";
 
 function About(props) {
   return (
     <Container maxWidth="md">
-      <Section title="About Me">
+      <Main title="About Me">
         <AboutContent />
-      </Section>
+      </Main>
     </Container>
   );
 }

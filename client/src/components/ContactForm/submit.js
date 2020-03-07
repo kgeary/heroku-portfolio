@@ -24,6 +24,7 @@ const submit = (e) => {
       document.getElementById("name").value = "";
       document.getElementById("subject").value = "";
       document.getElementById("message").value = "";
+      document.getElementById("alert").textContent = "Message Sent!";
     })
     .catch(err => {
       document.getElementById("alert").textContent = "Problem Sending Message";

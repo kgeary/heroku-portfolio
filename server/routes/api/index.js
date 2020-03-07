@@ -1,5 +1,8 @@
 const router = require("express").Router();
+const contactController = require("../../controllers/contactController");
 
+// matches /api/contact
+router.route("/contact")
+  .post(contactController.sendEmail);
 
-//router.use("/user", isAuthenticated, userRoutes);
 module.exports = router;

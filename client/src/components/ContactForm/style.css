@@ -1,4 +1,25 @@
 .formField {
   display: block;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+.formField:last-child {
+  margin-bottom: 1rem;
+}
+
+#submit {
+  background-color: hsl(240, 76%, 13%);
+  color: whitesmoke;
+}
+
+#submit:hover {
+  background-color: hsl(240, 76%, 33%);
+}
+
+#submit:active {
+  background-color: hsl(240, 76%, 53%);
+}
+
+.alert {
+  color: red;
 }

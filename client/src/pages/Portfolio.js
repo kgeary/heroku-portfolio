@@ -1,14 +1,14 @@
 import React from "react";
 import { Container } from "@material-ui/core"
-import Section from "../components/Section";
+import Main from "../components/Main";
 import PortfolioContent from "../content/PortfolioContent";
 
 function Portfolio(props) {
   return (
     <Container maxWidth="md">
-      <Section title="Portfolio">
+      <Main title="Portfolio">
         <PortfolioContent />
-      </Section>
+      </Main>
     </Container>
   );
 }

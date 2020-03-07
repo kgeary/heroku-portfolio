@@ -1,15 +1,18 @@
 import React from 'react';
-import { Box } from "@material-ui/core";
+import { Paper } from "@material-ui/core";
 import "./style.css";
 
-function Section(props) {
+function Main(props) {
+
+  const className = "Main";
+
   return (
-    <Box className="Section">
+    <Paper className={className} >
       <h1 className="Title">{props.title}</h1>
       <h3 className="Subtitle">{props.subtitle}</h3>
       {props.children}
-    </Box>
+    </Paper>
   );
 }
 
-export default Section;
+export default Main;

@@ -1,0 +1,13 @@
+.Project:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.Project {
+  text-align: center;
+}
+
+.projectImage {
+  width: 100%;
+  max-width: 600px;
+  max-height: 400px;
+}

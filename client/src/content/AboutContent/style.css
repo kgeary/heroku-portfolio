@@ -1,8 +1,24 @@
 .profileImage {
   float: left;
-  width: 200px;
+  width: 250px;
   margin-right: 1rem;
   margin-bottom: 0.5rem;
   border-radius: 15px;
-  opacity: 1.0;
+  background-color: black;
+}
+
+.clearFix::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+.techList {
+  display: flex;
+}
+
+@media screen and (max-width: 650px) {
+  .profileImage {
+    width: 100%;
+  }
 }

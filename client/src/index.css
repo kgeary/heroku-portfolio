@@ -9,7 +9,7 @@ body {
   font-family: 'Roboto', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: rgb(66, 65, 70);
+  color: hsl(240, 76%, 13%);
 }
 
 /* Sticky Footer */
@@ -23,16 +23,26 @@ body {
 
 .Content {
   flex: 1 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* Sticky Footer */
 
 .Footer {
+  width: 100%;
   display: relative;
   flex-shrink: 0;
   z-index: 10;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+@media screen and (max-width: 650px) {
+  div.MuiContainer-root {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .Content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }

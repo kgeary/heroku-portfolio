@@ -1,5 +1,5 @@
 import React from "react";
-import { TextField, TextArea, Button } from "@material-ui/core";
+import { TextField, Button } from "@material-ui/core";
 import submit from "./submit";
 import "./style.css";
 
@@ -30,6 +30,7 @@ function ContactForm() {
           variant={variant}
         />
       </div>
+
       <div className={className}>
         <TextField
           fullWidth
@@ -48,20 +49,21 @@ function ContactForm() {
           id="message"
           label="Message (1024 char max)"
           placeholder="Your Message"
-          rows={6}
+          rows={5}
           maxLength={1024}
           variant={variant}
         />
       </div>
-
       <Button
         id="submit"
         onClick={submit}
+        size="large"
         variant="contained"
         color="primary"
       >Submit
       </Button>
-
+      <br />
+      <br />
       <span id="alert" role="alert" className="alert" />
     </form>
   );
