@@ -32,19 +32,23 @@ function AboutContent(props) {
         BSE in Computer Engineering from the University of Michigan, Ann Arbor<br />
         Graduate University of Texas Full Stack Bootcamp
       </p>
-      <p style={{ display: "none" }}>
+      <p>
         I have experience with:
-        <ul class="skill-list">
-          <li>HTML</li>
-          <li>css</li>
-          <li>javascript</li>
-          <li>React</li>
-          <li>node</li>
-          <li>express</li>
-          <li>jQuery</li>
-          <li>MySQL</li>
-          <li>MongoDb</li>
-          <li>regEx</li>
+        <ul className="skill-list" style={{ display: "flex" }}>
+          <div style={{ marginRight: "3rem" }}>
+            <li>HTML</li>
+            <li>css</li>
+            <li>javascript</li>
+            <li>React</li>
+            <li>node</li>
+          </div>
+          <div>
+            <li>express</li>
+            <li>jQuery</li>
+            <li>MySQL</li>
+            <li>MongoDb</li>
+            <li>regEx</li>
+          </div>
         </ul>
       </p>
     </React.Fragment>

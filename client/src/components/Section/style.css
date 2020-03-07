@@ -1,4 +1,5 @@
 .Section {
+  margin-top: 2rem;
   background-color: whitesmoke;
   opacity: 0.92;
   padding-top: 2rem;
@@ -18,11 +19,8 @@
 }
 
 .parallax {
-  /* The image used */
   background-image: url("./mountains.jpg");
-  /* Full height */
-  height: 70%;
-  /* Create the parallax scrolling effect */
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

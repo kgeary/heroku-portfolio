@@ -9,6 +9,7 @@ body {
   font-family: 'Roboto', BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: rgb(66, 65, 70);
 }
 
 /* Sticky Footer */
@@ -27,7 +28,9 @@ body {
 /* Sticky Footer */
 
 .Footer {
+  display: relative;
   flex-shrink: 0;
+  z-index: 10;
 }
 
 code {
