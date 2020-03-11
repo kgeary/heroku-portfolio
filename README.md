@@ -2,21 +2,20 @@
 Developer Portfolio for Deployment on Heroku
 
 ## About Me
-My name is Kevin Geary and I actively seeking full stack web development opportunities.
-I recently transitioned locations and careers. From Detroit to Austin and Automotive Software Engineer 
-to Full Stack Developer.
-I'm a recent graduate of the University of Texas Full Stack Coding bootcamp and also 
-have a BSE in Computer Engineering from the University of Michigan.
+My name is Kevin Geary and I am actively seeking full stack web development 
+opportunities. I recently transitioned locations and careers moving from Detroit 
+to Austin and automotive software engineering to full stack web development.
+I'm a recent graduate of the University of Texas full stack coding bootcamp and 
+also received a BSE in Computer Engineering from the University of Michigan.
 
 ## Portfolio
-Check out some of my projects from the bootcamp or see what I'm working on lately.
-[Live Site @ Heroku](https://kevingeary.herokuapp.com/)
+Check out some of my projects from the bootcamp or see what I'm working on lately.  
+[Live Site @ Heroku](https://kevingeary.herokuapp.com/)  
+<img src="screenshot.png" alt="Screenshot of portfolio" width="350px">
+
+Or checkout out the rest of my github account: 
+[kgeary @ github](https://www.github.com/kgeary)  
 
 ## Technology
 I have experience with:
-* Javascript
-* React
-* Node
-* MySQL
-* MongoDB
-* Express
+HTML, CSS, Javascript, React, Node, MySQL, MongoDB, Express, jQuery, Bootstrap
