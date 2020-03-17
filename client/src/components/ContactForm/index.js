@@ -11,7 +11,11 @@ function ContactForm() {
     <React.Fragment>
       <form>
         <div className={className}>
-          <a href="mailto:kgeary@gmail.com" target="_blank" rel="noopener noreferrer">via email</a>
+          <a href="mailto:kgeary@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+          {" - "}
+          <a href="https://github.com/kgeary" target="_blank" rel="noopener noreferrer">Github</a>
+          {" - "}
+          <a href="Kevin_Geary_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
         <div className={className}>
           <TextField
