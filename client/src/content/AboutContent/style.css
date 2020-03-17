@@ -17,8 +17,15 @@
   display: flex;
 }
 
+li {
+  margin-bottom: 0.5rem;
+}
+
 @media screen and (max-width: 650px) {
   .profileImage {
     width: 100%;
+  }
+  ul {
+    padding-left: 1rem;
   }
 }

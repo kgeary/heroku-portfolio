@@ -50,4 +50,7 @@ section h3 {
     padding-top: 0;
     padding-bottom: 0;
   }
+  p {
+    text-align: justify;
+  }
 }
