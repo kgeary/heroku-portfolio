@@ -12,16 +12,17 @@ function AboutContent(props) {
       />
       <section className="clearFix">
         <p>
-          Hi, I'm Kevin, an aspiring web developer located in Austin, Texas.
+          Hi, I'm Kevin, a full=stack web developer located in Austin, Texas.
           I am a recent graduate of the University of Texas Full Stack Bootcamp who is looking
-            for new career opportunities at this time.
-          I'm passionate about javascript and React and being part of a team to build great things.
+          for new career opportunities at this time.
+          I'm passionate about javascript, React, and being part of a team to build great things.
+          I love working with data and debugging code.
         </p>
 
         <p>
           I recently relocated from Detroit, Michigan where I worked in the automotive sector
-          programming embedded applications. I am somewhat new to web development,
-          but hope to leverge my education and experience to accelerate my growth.
+          programming embedded systems and desktop applications. I hope to leverage my
+          education and professional experience to accelerate my growth and acquire new skills.
         </p>
 
       </section>

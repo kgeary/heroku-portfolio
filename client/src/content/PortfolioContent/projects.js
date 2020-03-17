@@ -1,62 +1,70 @@
-import screenPwGen from "./screens/place1.jpg";
-import screenQuiz from "./screens/place2.jpg";
-import screenSchedule from "./screens/place3.jpg";
-import screenWeather from "./screens/place4.jpg";
-import screenAtxNow from "./screens/place5.jpg";
-import screenTemplate from "./screens/place6.jpg";
-import screenTracker from "./screens/place7.jpg";
-import screenHandlebars from "./screens/place8.jpg";
-import screenFitness from "./screens/place9.jpg";
-import screenDirectory from "./screens/place10.jpg";
+import screenPwGen from "./screens/password.jpg";
+import screenQuiz from "./screens/quiz.jpg";
+import screenSchedule from "./screens/scheduler.jpg";
+import screenWeather from "./screens/weather.jpg";
+import screenAtxNow from "./screens/atxnow.jpg";
+import screenTemplate from "./screens/template.jpg";
+import screenTracker from "./screens/employee-tracker.jpg";
+import screenHandlebars from "./screens/handlebars.jpg";
+import screenMovieReview from "./screens/movie-review.jpg";
+import screenFitness from "./screens/fitness-tracker.jpg";
+import screenDirectory from "./screens/employee-directory.jpg";
+import screenRoster from "./screens/roster-rocket.jpg";
 
 const projects = [
   {
     link: "password-generator",
     title: "Password Generator",
-    tags: "",
+    tags: "javascript",
     img: screenPwGen
   },
   {
-    link: "web-apis",
+    link: "interactive-quiz",
     title: "Interactive Quiz",
-    tags: "",
+    tags: "bootstrap, javascript",
     img: screenQuiz
   },
   {
-    link: "third-party-apis",
+    link: "workday-planner",
     title: "Work Day Scheduler",
-    tags: "jQuery MomentJs",
+    tags: "jQuery, MomentJs",
     img: screenSchedule
   },
   {
-    link: "server-side-apis",
+    link: "weather-dashboard",
     title: "Weather Dashboard",
-    tags: "API AJAX",
+    tags: "API, AJAX",
     img: screenWeather
   },
   {
     link: "atxnow",
     title: "Event Aggregator",
-    tags: "jQuery API Leaflet",
+    tags: "jQuery, API, Leaflet, Pagination",
     img: screenAtxNow
   },
   {
     link: "template-engine",
     title: "Template Engine",
-    tags: "node",
+    tags: "Node",
     img: screenTemplate
   },
   {
     link: "employee-tracker",
-    title: "MySql Employee Tracker",
-    tags: "node MySql",
+    title: "MySQL Employee Tracker",
+    tags: "Node, MySQL",
     img: screenTracker
   },
   {
     link: "express-handlebars",
     title: "Sequelize Handlebars",
-    tags: "node Express Handlebars Sequelize MySql",
+    tags: "Node, Express, Handlebars, Sequelize, MySQL",
     img: screenHandlebars
+  },
+  {
+    link: "movie-review-db",
+    title: "Movie Reviews DB",
+    tags: "MySQL, Express, Node, EJS",
+    img: screenMovieReview
   },
   {
     link: "fitness-tracker",
@@ -66,9 +74,15 @@ const projects = [
   },
   {
     link: "react-directory",
-    title: "Employee Directory",
+    title: "Employee Directory using React",
     tags: "React",
     img: screenDirectory
+  },
+  {
+    link: "roster-rocket",
+    title: "Roster Rocket",
+    tags: "MySQL, Express, React, Node",
+    img: screenRoster
   }
 ];
 

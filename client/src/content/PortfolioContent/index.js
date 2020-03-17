@@ -13,17 +13,17 @@ function PortfolioContent(props) {
   }
 
   const getProjectsFound = () => {
-    const numFound = projects.filter(project => project.tags.toLowerCase().includes(search)).length;
+    const numFound = projects.filter(project => project.tags.toLowerCase().includes(search.toLowerCase())).length;
     return numFound ?
-      ((numFound != 1) ? `${numFound} Projects Found` : "1 Project Found") :
+      ((numFound !== 1) ? `${numFound} Projects Found` : "1 Project Found") :
       "No Projects Found"
   }
 
   const showFilteredProjects = () => {
     return projects
-      .filter(project => project.tags.toLowerCase().includes(search))
+      .filter(project => project.tags.toLowerCase().includes(search.toLowerCase()))
       .map(project => (
-        <Project {...project} key={project.title} />
+        <Project {...project} key={project.title} setSearch={setSearch} />
       ))
   }
 
@@ -39,8 +39,9 @@ function PortfolioContent(props) {
           variant={"filled"}
           label="Filter by Tag"
           onChange={onInputChange}
+          value={search}
         />
-        <Typography variant={"h5"}>{getProjectsFound()}</Typography>
+        <Typography variant={"h5"} className="numProjects">{getProjectsFound()}</Typography>
       </div>
       {showFilteredProjects()}
       <div style={{ textAlign: "center" }}>
