@@ -20,8 +20,8 @@ function AboutContent(props) {
         <p>
           I recently relocated from Detroit, Michigan where I worked in the automotive sector
           programming embedded systems and desktop applications at a Tier-1 supplier. My past experience
-          in the design, development, and testing of software has helped smooth the transition to web development.
-          I look forward to bringing in new and different ideas for developing quality code.
+          in the design, development, and testing of software has helped in my transition to
+          web development, but I have much to learn.
         </p>
 
         <p>
