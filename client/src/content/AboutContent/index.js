@@ -55,24 +55,28 @@ function AboutContent(props) {
 
       <section>
         <h3>Technology</h3>
-        <ul className="techList">
+        <div className="techList">
           <div style={{ marginRight: "3rem" }}>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>javascript</li>
-            <li>React</li>
-            <li>Node</li>
-            <li>Bootstrap</li>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>javascript</li>
+              <li>React</li>
+              <li>Node</li>
+              <li>Bootstrap</li>
+            </ul>
           </div>
           <div>
-            <li>Express</li>
-            <li>jQuery</li>
-            <li>MySQL</li>
-            <li>MongoDb</li>
-            <li>C#</li>
-            <li>Python</li>
+            <ul>
+              <li>Express</li>
+              <li>jQuery</li>
+              <li>MySQL</li>
+              <li>MongoDb</li>
+              <li>C#</li>
+              <li>Python</li>
+            </ul>
           </div>
-        </ul>
+        </div>
       </section>
     </React.Fragment>
   );

@@ -17,6 +17,10 @@
   display: flex;
 }
 
+.techList ul {
+  margin-top: 0;
+}
+
 li {
   margin-bottom: 0.5rem;
 }
