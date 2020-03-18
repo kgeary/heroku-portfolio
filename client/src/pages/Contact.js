@@ -5,7 +5,7 @@ import ContactContent from "../content/ContactContent";
 function Contact(props) {
   return (
     <Container maxWidth="md">
-      <Main title="Contact Me">
+      <Main title="Contact Info">
         <ContactContent />
       </Main>
     </Container>

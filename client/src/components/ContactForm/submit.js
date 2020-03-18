@@ -4,7 +4,6 @@ const submit = (e) => {
   e.preventDefault();
   const email = document.getElementById("email").value.trim();
   const name = document.getElementById("name").value.trim();
-  const subject = document.getElementById("subject").value.trim();
   const message = document.getElementById("message").value.trim();
 
   if (message.length < 3) {
@@ -17,17 +16,21 @@ const submit = (e) => {
     return;
   }
 
-  API.sendEmail(email, name, subject, message)
+  API.sendEmail(email, name, "Contact Form from Heroku", message)
     .then(res => {
       document.getElementById("alert").textContent = "Message Sent!";
       document.getElementById("email").value = "";
       document.getElementById("name").value = "";
-      document.getElementById("subject").value = "";
       document.getElementById("message").value = "";
-      document.getElementById("alert").textContent = "Message Sent!";
+      const alert = document.getElementById("alert");
+      alert.textContent = "Message Sent!";
+      alert.setAttribute("style", "color: green;")
+
     })
     .catch(err => {
-      document.getElementById("alert").textContent = "Problem Sending Message";
+      const alert = document.getElementById("alert");
+      alert.textContent = "Problem Sending Message";
+      alert.setAttribute("style", "color: red;")
       console.log(err);
     })
 };

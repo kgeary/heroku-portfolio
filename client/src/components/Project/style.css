@@ -47,6 +47,10 @@
   margin: 0.5rem;
 }
 
+.tag:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 650px) {
   .Project {
     box-sizing: border-box;

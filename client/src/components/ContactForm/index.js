@@ -9,14 +9,8 @@ function ContactForm() {
   const className = "formField";
   return (
     <React.Fragment>
+      <p>Send Me a message...</p>
       <form>
-        <div className={className}>
-          <a href="mailto:kgeary@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
-          {" - "}
-          <a href="https://github.com/kgeary" target="_blank" rel="noopener noreferrer">Github</a>
-          {" - "}
-          <a href="Kevin_Geary_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-        </div>
         <div className={className}>
           <TextField
             fullWidth
@@ -25,6 +19,7 @@ function ContactForm() {
             label="Name"
             placeholder="Your Name"
             variant={variant}
+            size="small"
           />
         </div>
 
@@ -36,17 +31,7 @@ function ContactForm() {
             label="Email"
             placeholder="Your Email"
             variant={variant}
-          />
-        </div>
-
-        <div className={className}>
-          <TextField
-            fullWidth
-            className={className}
-            id="subject"
-            label="Subject"
-            placeholder="Email Subject"
-            variant={variant}
+            size="small"
           />
         </div>
 
@@ -60,6 +45,7 @@ function ContactForm() {
             rows={5}
             maxLength={1024}
             variant={variant}
+            size="small"
           />
         </div>
         <Button

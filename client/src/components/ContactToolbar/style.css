@@ -1,0 +1,15 @@
+.contactMethods {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.contactMethods a {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.contactIcon {
+  color: hsl(240, 76%, 13%);
+}

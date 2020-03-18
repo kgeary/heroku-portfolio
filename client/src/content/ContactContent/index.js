@@ -1,10 +1,13 @@
 import React from "react";
+import ContactToolbar from "../../components/ContactToolbar";
 import ContactForm from "../../components/ContactForm";
-import "./style.css";
 
 function ContactContent(props) {
   return (
-    <ContactForm />
+    <>
+      <ContactToolbar />
+      <ContactForm />
+    </>
   );
 }
 

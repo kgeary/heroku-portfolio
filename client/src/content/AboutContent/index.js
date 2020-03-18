@@ -12,22 +12,21 @@ function AboutContent(props) {
       />
       <section className="clearFix">
         <p>
-          Hi, I'm Kevin, a full-stack web developer located in Austin, Texas.
-          I am a recent graduate of the University of Texas Full Stack Bootcamp who is looking
+          I am a full-stack web developer located in Austin, Texas.
+          I graduated from the University of Texas Full Stack Bootcamp and am looking
           for new career opportunities at this time.
         </p>
 
         <p>
           I recently relocated from Detroit, Michigan where I worked in the automotive sector
-          programming embedded systems and desktop applications at a Tier-1 supplier.
-          While in automotive, I gained experience working on multidisciplinary
-          teams and within a number of software development processes.
+          programming embedded systems and desktop applications at a Tier-1 supplier. My past experience
+          in the design, development, and testing of software has helped smooth the transition to web development.
+          I look forward to bringing in new and different ideas for developing quality code.
         </p>
 
         <p>
-          I'm passionate about technology, coding, and being part of a team to build great things.
-          Going forward, I hope to leverage my educational and professional experience to accelerate my growth as
-          a software developer.
+          I'm passionate about technology, coding, and being part of a team that builds
+          great things. Please follow my projects on Github and contact me if you would like to know more.
         </p>
 
       </section>
@@ -36,8 +35,8 @@ function AboutContent(props) {
         <h3>Hobbies</h3>
         <p>
           When I'm not working I enjoy spending time outdoors with my wife and our dog.
-          I enjoy hiking, mountain biking, and skateboarding. I am an avid sports fan and
-          love to follow basketball and football.
+          I enjoy hiking, mountain biking, and skateboarding. I am an avid sports fan especially
+          basketball and football.
         </p>
       </section>
 
@@ -45,11 +44,11 @@ function AboutContent(props) {
         <h3>Education</h3>
         <ul>
           <li>
-            BSE in Computer Engineering<br />
+            BSE, Computer Engineering<br />
             University of Michigan, Ann Arbor
           </li>
           <li>
-            Graduate University of Texas Full Stack Bootcamp
+            Graduate, University of Texas Full-Stack Bootcamp
           </li>
         </ul>
       </section>
