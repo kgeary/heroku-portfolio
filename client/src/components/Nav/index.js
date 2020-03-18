@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { AppBar, Typography, Toolbar, Container, Drawer, Button, List } from "@material-ui/core";
+import { AppBar, Typography, Toolbar, Container, Drawer, List } from "@material-ui/core";
 import MenuIcon from '@material-ui/icons/Menu';
+import IconButton from '@material-ui/core/IconButton';
 import "./style.css";
 
 
@@ -29,15 +30,12 @@ function Nav(props) {
             <NavLink to="/portfolio" className="navLink" activeClassName="active">Portfolio</NavLink>
           </nav>
           <nav className="small-screen">
-            <Button
-              style={{ color: "#99BBEE", borderColor: "#99BBEE" }}
-              variant="outlined"
-              onClick={toggleDrawer(true)}
-            >
+            <IconButton edge="start" onClick={toggleDrawer(true)} style={{ color: "#99BBEE", borderColor: "#99BBEE" }} aria-label="menu">
               <MenuIcon />
-            </Button>
+            </IconButton>
             <Drawer open={isOpen} onClose={toggleDrawer(false)}>
               <List onClick={toggleDrawer(false)} className="mobileList">
+                <span className="mobileTitle">Navigation</span>
                 <NavLink to="/" className="mobileLink" exact activeClassName="active">About</NavLink>
                 <NavLink to="/contact" className="mobileLink" activeClassName="active">Contact</NavLink>
                 <NavLink to="/portfolio" className="mobileLink" activeClassName="active">Portfolio</NavLink>
