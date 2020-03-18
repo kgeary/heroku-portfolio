@@ -12,6 +12,10 @@ body {
   color: hsl(240, 76%, 13%);
 }
 
+section h1, section h3, section h4, section h5, h1.Title, h3.Subtitle, h4.navBrand {
+  font-family: 'Merriweather';
+}
+
 section h3 {
   background-color: rgba(173, 216, 230, 0.2);
   padding: 0.5rem;
