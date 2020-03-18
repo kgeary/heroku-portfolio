@@ -37,7 +37,7 @@ function Nav(props) {
               <MenuIcon />
             </Button>
             <Drawer open={isOpen} onClose={toggleDrawer(false)}>
-              <List onClick={toggleDrawer(false)} style={{ display: "flex", flexDirection: "column" }}>
+              <List onClick={toggleDrawer(false)} className="mobileList">
                 <NavLink to="/" className="mobileLink" exact activeClassName="active">About</NavLink>
                 <NavLink to="/contact" className="mobileLink" activeClassName="active">Contact</NavLink>
                 <NavLink to="/portfolio" className="mobileLink" activeClassName="active">Portfolio</NavLink>
