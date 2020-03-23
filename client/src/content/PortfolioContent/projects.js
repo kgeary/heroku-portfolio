@@ -15,74 +15,86 @@ const projects = [
   {
     link: "password-generator",
     title: "Password Generator",
-    tags: "javascript",
-    img: screenPwGen
+    tags: "Javascript",
+    img: screenPwGen,
+    description: "A random password generator written in Javascript"
   },
   {
     link: "interactive-quiz",
     title: "Interactive Quiz",
-    tags: "bootstrap, javascript",
-    img: screenQuiz
+    tags: "Bootstrap, Javascript",
+    img: screenQuiz,
+    description: "An interactive quiz application written in Javascript"
   },
   {
     link: "workday-planner",
     title: "Work Day Scheduler",
     tags: "jQuery, MomentJs",
-    img: screenSchedule
+    img: screenSchedule,
+    description: "A day planner writte in Javascript/jQuery"
   },
   {
     link: "weather-dashboard",
     title: "Weather Dashboard",
-    tags: "API, AJAX",
-    img: screenWeather
+    tags: "AJAX, API, Javascript",
+    img: screenWeather,
+    description: "A weather dashboard using Javascript and AJAX"
   },
   {
     link: "atxnow",
-    title: "Event Aggregator",
-    tags: "jQuery, API, Leaflet, Pagination",
-    img: screenAtxNow
+    title: "ATX Now",
+    tags: "AJAX, API, Javascript, jQuery, Leaflet, Pagination",
+    img: screenAtxNow,
+    description: "Group Project 1. An Event Aggregator that finds local events"
   },
   {
     link: "template-engine",
     title: "Template Engine",
     tags: "Node",
-    img: screenTemplate
+    img: screenTemplate,
+    description: "A homebrewed server side template engine"
   },
   {
     link: "employee-tracker",
     title: "MySQL Employee Tracker",
-    tags: "Node, MySQL",
-    img: screenTracker
+    tags: "MySQL, Node",
+    img: screenTracker,
+    description: "Node based employee tracking application. Support CRUD operations and using MySQL backed data."
   },
   {
     link: "express-handlebars",
-    title: "Sequelize Handlebars",
-    tags: "Node, Express, Handlebars, Sequelize, MySQL",
-    img: screenHandlebars
+    title: "Burger Tracker",
+    tags: "Express, Handlebars, MySQL, Node, ORM, Sequelize",
+    img: screenHandlebars,
+    description: "An application to supoprt CRUD of burger orders. Uses Handlebars for templating and Sequelize ORM"
   },
   {
     link: "movie-review-db",
     title: "Movie Reviews DB",
-    tags: "MySQL, Express, Node, EJS",
-    img: screenMovieReview
+    tags: "EJS, Express, MySQL, Node",
+    img: screenMovieReview,
+    description: "Group Project 2. A Full-Stack movie review database.  Features authentication, server side rendering, AJAX"
   },
   {
     link: "fitness-tracker",
     title: "A MongoDB backed fitness tracker",
-    tags: "MongoDB, Mongoose, Express, API",
-    img: screenFitness
+    tags: "API, Express, MongoDB, Mongoose, Node",
+    img: screenFitness,
+    description: "A NoSql based fitness tracking application using Mongoose/MongoDB"
   },
   {
     link: "react-directory",
     title: "Employee Directory using React",
     tags: "React",
-    img: screenDirectory
+    img: screenDirectory,
+    description: "Interactive employee directory application built using React. Filter and sort employee tables"
   },
   {
     link: "roster-rocket",
     title: "Roster Rocket",
-    tags: "MySQL, Express, React, Node",
-    img: screenRoster
+    tags: "Express, MySQL, Node, React",
+    img: screenRoster,
+    description: "Group Project 3. Full-stack school registration application. Provides different views and options based on user type (Admin/Parent)"
   }
 ];
 

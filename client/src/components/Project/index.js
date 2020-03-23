@@ -27,7 +27,10 @@ function Project(props) {
         <h1>{props.title}</h1>
         <img src={props.img} alt={props.title} className="projectImage" />
       </a>
-      <p className="tags">Tags: {getTags()}</p>
+      <p className="description"><span style={{ fontWeight: "bold" }}>Description</span><br />{props.description}</p>
+      <p className="tags">
+        {getTags()}
+      </p>
     </div>
   );
 }
