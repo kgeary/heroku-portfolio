@@ -1,5 +1,5 @@
 .Project:not(:last-child) {
-  margin-bottom: 3rem;
+  margin-bottom: 8rem;
 }
 
 .Project {
@@ -64,7 +64,10 @@
 @media screen and (max-width: 650px) {
   .Project {
     box-sizing: border-box;
-    width: 100%;
+    width: 100vw;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: 3rem;
   }
   p.tags {
     text-align: center;

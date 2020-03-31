@@ -37,7 +37,7 @@ function PortfolioContent(props) {
           size="small"
           type="search"
           variant={"filled"}
-          label="Filter by Tag"
+          label="Filter Projects by Tag"
           onChange={onInputChange}
           value={search}
         />

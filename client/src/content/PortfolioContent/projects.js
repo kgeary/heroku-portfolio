@@ -10,6 +10,8 @@ import screenMovieReview from "./screens/movie-review.jpg";
 import screenFitness from "./screens/fitness-tracker.jpg";
 import screenDirectory from "./screens/employee-directory.jpg";
 import screenRoster from "./screens/roster-rocket.jpg";
+import showRatings from "./screens/showRatings.jpg";
+
 
 const projects = [
   {
@@ -41,13 +43,6 @@ const projects = [
     description: "A weather dashboard using Javascript and AJAX"
   },
   {
-    link: "atxnow",
-    title: "ATX Now",
-    tags: "AJAX, API, Javascript, jQuery, Leaflet, Pagination",
-    img: screenAtxNow,
-    description: "Group Project 1. An Event Aggregator that finds local events"
-  },
-  {
     link: "template-engine",
     title: "Template Engine",
     tags: "Node",
@@ -69,13 +64,6 @@ const projects = [
     description: "An application to supoprt CRUD of burger orders. Uses Handlebars for templating and Sequelize ORM"
   },
   {
-    link: "movie-review-db",
-    title: "Movie Reviews DB",
-    tags: "EJS, Express, MySQL, Node",
-    img: screenMovieReview,
-    description: "Group Project 2. A Full-Stack movie review database.  Features authentication, server side rendering, AJAX"
-  },
-  {
     link: "fitness-tracker",
     title: "A MongoDB backed fitness tracker",
     tags: "API, Express, MongoDB, Mongoose, Node",
@@ -90,12 +78,33 @@ const projects = [
     description: "Interactive employee directory application built using React. Filter and sort employee tables"
   },
   {
+    link: "atxnow",
+    title: "ATX Now",
+    tags: "AJAX, API, Javascript, jQuery, Leaflet, Pagination",
+    img: screenAtxNow,
+    description: "Group Project 1. An Event Aggregator that finds local events"
+  },
+  {
+    link: "movie-review-db",
+    title: "Movie Reviews DB",
+    tags: "EJS, Express, MySQL, Node",
+    img: screenMovieReview,
+    description: "Group Project 2. A Full-Stack movie review database.  Features authentication, server side rendering, AJAX"
+  },
+  {
     link: "roster-rocket",
     title: "Roster Rocket",
     tags: "Express, MySQL, Node, React",
     img: screenRoster,
     description: "Group Project 3. Full-stack school registration application. Provides different views and options based on user type (Admin/Parent)"
-  }
+  },
+  {
+    link: "show-ratings",
+    title: "Interactive TV Show Ratings",
+    tags: "Express, Node, React, Chart",
+    img: showRatings,
+    description: "See how each episode of a TV Series stacked up. An interactive chart with the rating of each episode across the seasons. Built using React, recharts, Express. Date from the OMDB and IMDPB"
+  },
 ];
 
 export default projects.reverse();

@@ -22,16 +22,31 @@ function Project(props) {
   }
 
   return (
-    <div data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" className="Project">
-      <a href={baseUrl + props.link}>
+    <div
+      data-aos="fade-up"
+      data-aos-offset="400"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="600"
+      className="Project"
+    >
+      <a href={baseUrl + props.link} target="_blank" rel="noopener noreferrer">
         <h1>{props.title}</h1>
         <img src={props.img} alt={props.title} className="projectImage" />
       </a>
-      <p className="description"><span style={{ fontWeight: "bold" }}>Description</span><br />{props.description}</p>
+
+      <p className="description">
+        <span style={{ fontWeight: "bold", display: "block" }}>
+          Description
+        </span>
+        <span>
+          {props.description}
+        </span>
+      </p>
+
       <p className="tags">
         {getTags()}
       </p>
-    </div>
+    </div >
   );
 }
 
