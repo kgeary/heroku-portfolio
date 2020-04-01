@@ -96,7 +96,7 @@ const projects = [
     title: "Roster Rocket",
     tags: "Express, MySQL, Node, React",
     img: screenRoster,
-    description: "Full-stack school registration application. Provides different views and options based on user type (Admin/Parent)."
+    description: "Full-stack school registration application. Provides different views and options based on user type (Admin/Parent). Try out the administrator account -- username: blah1@blah.com, password: abcabc"
   },
   {
     link: "show-ratings",
