@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Button, TextField, Typography } from "@material-ui/core";
+import { TextField, Typography, Fab } from "@material-ui/core";
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import Project from "../../components/Project";
-import "./style.css";
+import ScrollTop from "../../components/ScrollTop";
 import projects from "./projects";
-
+import "./style.css";
 
 function PortfolioContent(props) {
   const [search, setSearch] = useState("");
@@ -36,7 +37,7 @@ function PortfolioContent(props) {
           margin="normal"
           size="small"
           type="search"
-          variant={"filled"}
+          variant={"outlined"}
           label="Filter Projects by Tag"
           onChange={onInputChange}
           value={search}
@@ -44,13 +45,11 @@ function PortfolioContent(props) {
         <Typography variant={"h5"} className="numProjects">{getProjectsFound()}</Typography>
       </div>
       {showFilteredProjects()}
-      <div style={{ textAlign: "center" }}>
-        <Button
-          onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}
-        >
-          Back to Top
-      </Button>
-      </div >
+      <ScrollTop {...props}>
+        <Fab color="primary" size="small" aria-label="scroll back to top">
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollTop>
     </React.Fragment >
   );
 }
