@@ -52,13 +52,27 @@
 }
 
 .description {
-  width: 100%;
+  margin: 0.5rem;
 }
 
 .Project p {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   text-align: left;
+}
+
+.linkGroup {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.links a {
+  padding: 0.5rem 1rem;
+  color: hsl(240, 76%, 13%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 650px) {
@@ -71,5 +85,9 @@
   }
   p.tags {
     text-align: center;
+  }
+  .linkGroup {
+    margin: 0 auto;
+    justify-content: center;
   }
 }

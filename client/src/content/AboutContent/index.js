@@ -63,7 +63,6 @@ function AboutContent(props) {
               <li>javascript</li>
               <li>React</li>
               <li>Node</li>
-              <li>Bootstrap</li>
             </ul>
           </div>
           <div>
@@ -71,9 +70,8 @@ function AboutContent(props) {
               <li>Express</li>
               <li>jQuery</li>
               <li>MySQL</li>
-              <li>MongoDb</li>
+              <li>MongoDB</li>
               <li>C#</li>
-              <li>Python</li>
             </ul>
           </div>
         </div>
