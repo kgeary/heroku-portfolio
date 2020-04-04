@@ -1,13 +1,29 @@
 import React, { useState } from "react";
 import { TextField, Typography, Fab } from "@material-ui/core";
+import Autocomplete from '@material-ui/lab/Autocomplete';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import Project from "../../components/Project";
 import ScrollTop from "../../components/ScrollTop";
 import projects from "./projects";
 import "./style.css";
 
+const allFoundTags = projects
+  .reduce((acc, project) => {
+    return acc.concat(project.tags
+      .split(",")
+      .map(i => i.trim().toLowerCase()))
+  }, [])
+  .sort();
+
+const tagList = [...new Set(allFoundTags)];
+
 function PortfolioContent(props) {
+
   const [search, setSearch] = useState("");
+
+  function onAutoComplete(event, value) {
+    setSearch(value);
+  }
 
   const onInputChange = e => {
     setSearch(e.target.value);
@@ -41,19 +57,27 @@ function PortfolioContent(props) {
   return (
     <React.Fragment>
       <div className="filterBox">
-        <TextField
-          autoFocus
+        <Autocomplete
           id="search"
-          margin="normal"
-          size="small"
-          type="search"
-          variant={"outlined"}
-          label="Filter Projects by Tag"
-          onChange={onInputChange}
-          value={search}
+          freeSolo
+          options={tagList}
+          style={{ width: "300px" }}
+          onInputChange={onAutoComplete}
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              margin="normal"
+              size="medium"
+              variant="outlined"
+              label="Filter Projects by Tag"
+              value={search}
+              onChange={onInputChange}
+            />
+          )}
         />
+
         <Typography
-          variant={"h5"}
+          variant={"p"}
           className="numProjects"
         >
           {getProjectsFound()}
